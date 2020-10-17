@@ -1,5 +1,4 @@
 const path = require("path");
-const HTMLPlugin = require("html-webpack-plugin");
 
 module.exports = {
   module: {
@@ -20,11 +19,9 @@ module.exports = {
     ],
   },
   resolve: {
+    alias: {
+      "~": path.resolve(__dirname, 'src')
+    },
     extensions: [".js", ".ts", ".tsx"],
   },
-  plugins: [
-    new HTMLPlugin({
-      template: path.join(__dirname, "src/index.html"),
-    }),
-  ],
 };
