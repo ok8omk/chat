@@ -6,8 +6,9 @@ module.exports = {
   ...commonConfig,
   plugins: [
     new HTMLPlugin({
-      template: path.join(__dirname, "examples/index.html"),
+      template: path.join(__dirname, "examples/src/index.html"),
     }),
   ],
-  entry: path.join(__dirname, 'examples/index.tsx'),
+  entry: path.join(__dirname, 'examples/src/index.tsx'),
+  output: { path: path.join(__dirname, 'examples/dist') }
 };
