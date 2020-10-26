@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import SendSvg from "./send-24px.svg";
+import svg from "./send-24px.svg";
 
 type Props = React.ComponentPropsWithoutRef<"button">;
 
@@ -22,7 +22,7 @@ const Button = styled.button`
 const SendButton: React.FC<Props> = (props) => {
   return (
     <Button {...props}>
-      <SendSvg />
+      <img src={svg} />
     </Button>
   );
 };

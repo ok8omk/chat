@@ -9,5 +9,3 @@ const StyledRadioInput = styled.div`
   padding: 4px 12px;
   font-size: 16px;
 `;
-
-const;

@@ -9,8 +9,8 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",
     "paths": {
-      "~": ["src/index.ts"],
-      "~/*": ["src/*"]
+      "~": ["src/packages/index.ts"],
+      "~/*": ["src/packages/*"]
     }
   }
 }
